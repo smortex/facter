@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 describe Facter::Bsd::FfiHelper do
+  describe '#getfsstat' do
+  end
+
   describe '#sysctl' do
     let(:oids) { [1, 2, 3] }
     let(:name) { double('FFI::MemoryPointer') }
